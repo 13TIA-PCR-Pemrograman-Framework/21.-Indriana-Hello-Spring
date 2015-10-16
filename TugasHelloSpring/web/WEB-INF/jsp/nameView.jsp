@@ -13,7 +13,7 @@
     </head>
     <body>
         <h1>Isi Data Diri Anda</h1>
-        <spring:nestedPath path="name">
+        <spring:nestedPath path="data">
             <form action="" method="post">
                 <table>
                     <tr>

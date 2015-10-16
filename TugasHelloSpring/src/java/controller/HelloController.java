@@ -25,7 +25,7 @@ public class HelloController extends SimpleFormController {
         //in the Web Application Context
 
         setCommandClass(Name.class);
-        setCommandName("name");
+        setCommandName("data");
         setSuccessView("helloView");
         setFormView("nameView");
     }
@@ -47,9 +47,9 @@ public class HelloController extends SimpleFormController {
          
         Name ObjekClassName = (Name) command;
         ModelAndView mv = new ModelAndView(getSuccessView());
-        mv.addObject("name", HelloService.YourName(ObjekClassName.getname()+"<br>"));
-        mv.addObject("nim", HelloService.YourNim(ObjekClassName.getnim()+"<br>"));
-        mv.addObject("address", HelloService.YourAddress(ObjekClassName.getaddress()+"<br>"));
+        mv.addObject("name", HelloService.YourName(ObjekClassName.getname()));
+        mv.addObject("nim", HelloService.YourNim(ObjekClassName.getnim()));
+        mv.addObject("address", HelloService.YourAddress(ObjekClassName.getaddress()));
         return mv;
      }
     

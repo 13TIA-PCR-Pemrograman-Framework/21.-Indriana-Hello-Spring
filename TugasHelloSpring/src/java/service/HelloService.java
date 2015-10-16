@@ -12,15 +12,15 @@ package service;
 public class HelloService {
     
     public static String YourName (String name){
-        return "Name    : "+name;
+        return "Name    : "+name+"<br>";
     }
     
-    public static String YourNim (String nim){
-        return "NIM    : "+nim;
+    public static String YourNim (int nim){
+        return "NIM    : "+nim+"<br>";
     }
     
     public static String YourAddress (String address){
-        return "Address    : "+address;
+        return "Address    : "+address+"<br>";
     }
     
 }
