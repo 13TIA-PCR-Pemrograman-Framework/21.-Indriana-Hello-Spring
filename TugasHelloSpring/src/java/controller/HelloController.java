@@ -48,8 +48,8 @@ public class HelloController extends SimpleFormController {
         Name ObjekClassName = (Name) command;
         ModelAndView mv = new ModelAndView(getSuccessView());
         mv.addObject("name", HelloService.YourName(ObjekClassName.getname()+"<br>"));
-        mv.addObject("nim", HelloService.YourNim(ObjekClassName.getaddress()+"<br>"));
-        mv.addObject("address", HelloService.YourName(ObjekClassName.getname()+"<br>"));
+        mv.addObject("nim", HelloService.YourNim(ObjekClassName.getnim()+"<br>"));
+        mv.addObject("address", HelloService.YourAddress(ObjekClassName.getaddress()+"<br>"));
         return mv;
      }
     
